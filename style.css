@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Monospace;
+}
+.body{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(to bottom,#000,#a05d00);
+}
+.body .header{
+  width: 100%;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: crimson;
+  border-radius: 5px 5px 0 0;
+}
+.body .header .title{
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.body .header .waktu{
+  background: #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.body .quiz{
+  width: 100%;
+  padding: 10px 5px;
+  background: #fff;
+}
+.body .quiz .pertanyaan{
+  font-size: 20px;
+  font-weight: 600;
+}
+.body .quiz .jawab .jawaban{
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+}
+.body .quiz .jawab .jawaban input{
+  margin-right: 5px;
+}
+.body .footer{
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body .footer button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: crimson;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+}
+.body .footer button:hover{
+  color: crimson;
+  background: transparent;
+}
+
+.kondisi{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  background: black;
+  padding: 50px 0;
+  text-align: center;
+  transition: top 0.5s;
+}
+.kondisi.active{
+  top: 0;
+}
+.kondisi .congrat{
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+.kondisi .keterangan{
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.kondisi .tbl button{
+  background: crimson;
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+}
+
+.mulai{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #000;
+  text-align: center;
+  padding: 50px 0;
+  top: 0;
+  left: 0;
+  transition: top 0.5s;
+}
+.mulai.active{
+  top: 100%;
+}
+.mulai .title{
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+.mulai .by{
+  color: #fff;
+  margin: 10px 0;
+}
+.mulai .tbl button{
+  padding: 5px 10px;
+  background: crimson;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  transition: color 0.3s;
+  font-size: 25px;
+}
+.mulai .tbl button:hover{
+  background: transparent;
+  color: crimson;
+}
+.mulai .rules{
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 0;
+}
+.kondisi .sisa-waktu{
+  color: #fff;
+  font-size: 16;
+  font-weight: bold;
+  margin: 10px 0;
+}

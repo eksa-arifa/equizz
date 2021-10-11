@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <title>QuizApp</title>
+</head>
+<body>
+  <div class="mulai">
+    <div class="title">EQuizzy</div>
+    <div class="by">By Eksa Arifa</div>
+    <div class="tbl"><button>Mulai</button></div>
+    <div class="rules">
+      1.Saat tombol mulai diklik waktu akan langsung berjalan <br />
+      2.jika waktu habis namun soal belum selesai,maka permainan akan langsung berakhir <br />
+      3.Soal berjumlah 10 nomor dengan waktu pengerjaan 30 detik <br />
+      4.1 soal jawaban benar bernilai 1 dan jawaban salah bernilai 0
+    </div>
+  </div>
+  <div class="body">
+    <div class="header">
+      <div class="title">EQuizzy</div>
+      <div class="waktu">
+        <div class="tulisan">Timer</div>
+        <div class="timer">0s</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="pertanyaan">1.Berapa 2+2?</div>
+      <div class="jawab">
+        <div class="jawaban">
+          <input type="radio" name="jawaban" id="a" />
+          <label for="a" id="ans1">40</label>
+        </div>
+        <div class="jawaban">
+          <input type="radio" name="jawaban" id="b" />
+          <label for="b" id="ans2">4</label>
+        </div>
+        <div class="jawaban">
+          <input type="radio" name="jawaban" id="c" />
+          <label for="c" id="ans3">60</label>
+        </div>
+        <div class="jawaban">
+          <input type="radio" name="jawaban" id="d" />
+          <label for="d" id="ans4">3</label>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="nomor"></div>
+      <div class="next"><button onclick="score()">Next</button></div>
+    </div>
+  </div>
+  <div class="kondisi">
+    <div class="congrat">SELAMAT</div>
+    <div class="sisa-waktu"></div>
+    <div class="keterangan">SCORE <div class="sc"></div></div>
+    <div class="tbl"><button onclick="retry()">Ulangi</button> <button onclick="kembali()">Kembali</button></div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="soal.js"></script>
+</body>
+</html>
